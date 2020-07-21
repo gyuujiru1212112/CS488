@@ -1,0 +1,10 @@
+Compilation:
+Compile with the default premake4/make combinations.If you get make error, please do a make clean and make again. 
+Run with ./A2.
+I tested on the machine gl30 in MC3007.
+
+Manual:
+The scale limit is set to be between 0 and 5.
+The default near plane is 3 and far plane is 20. 
+I used the Liang barsky 3d clipping for my clipping.
+My multi mouse button down events might not work very well for rotation.

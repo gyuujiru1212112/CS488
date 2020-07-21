@@ -1,0 +1,28 @@
+Compilation:
+
+This is an extended project for assignment, so I keep the program name still be './A4'. Also, I did not make any changes to the cs488 framework.
+
+Using the default premake4/make combination for compling the code as what we did for usual assignments. If you get any target error, please do a 'make clean' then 'make' again.
+
+
+Run Program:
+1. Use ./A4 [lua file] to run the program. The lua files that I created for this project are all in the Assets file. So please run those files through ./A4 Assets/xx.lua
+**I tested my program on device gl38 in MC3007
+
+There are a few images rendered in the folder "Raytraced_Images" for different objectives. The screenshot is my final scene. Other images are named related to the objectives. For more details, please see the report.pdf.
+
+
+Manual:
+More guide for the extension of lua languages and assumptions are also included in the report.pdf.
+
+Objectives:
+1. Cylinder and cone primitive are added along with the relative modelling language.
+2. Texture mapping
+3. Supersampling
+4. Mirror Reflection
+5. Constructive Solid Geometry
+6. Refraction
+7. Soft Shadow
+8. Depth of field
+9. Phong Shading
+10. Final Scene

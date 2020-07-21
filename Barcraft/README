@@ -1,0 +1,6 @@
+Compilation: 
+Use default premake4/make combination to compile and use ./A1 to run the program. If you got error when making A1(Error like cannot find target A1), please do a make clean then try again. I tested on computer in MC3007 with unbuntu 16.04 LTS, device gl16.
+Manual: 
+1. I found that the offsets of the scroll bar are different between the Apple Macbook and the machine in the Graphics Lab but I did match my scroll with the description by using the offsets of the scroll bar on the lab machine.
+2. I assumed that the rotation and scale won't happen at the same time. Specifically, when mouse dragging to rotate the grid, the scroll won't change the scale of the grid. After releasing the left mouse (which means the rotation stops), you can scroll up/down to change the scale.
+2. I added a slider for rotation as well so that user can see the rotated angle in the slider not only when user rotates by the slider but also by the mouse dragging.

@@ -1,0 +1,31 @@
+Compilation:
+1. Use the default premake4/gmake to compile the program in the terminal.
+2. Run my puppet using ./A3 Assets/puppet.lua
+My puppet.lua file is the one in Assets folder.
+I overrided the Assets/puppet.lua file to make my own puppet due to Xcode debug-friendly. New lua file won't be attached to the xcode project target.
+3. I tested my program on device gl02 in MC3007
+
+Manual:
+My puppet is a Japanese mascot called Kumamon. I also attached a photo of it (A3/kumamon.jpg) just for interest.
+
+Several assumptions:
+1. I assumed all the joint transformations are relative to the mouse y motion.
+2. Clicking on an unchecked checkbox will check the box while clicking on a checked one will uncheck it. The hot key for the checkbox options will work like this as well. For example, by default, the 'z-buffer' is checked and if I press the 'Z' key, the 'z-buffer' checkbox will be unchecked and z-buffer effect will be closed.
+3. The picking color is yellow. Only these below can be picked:
+   head (joint about y-axis between -15 and 15)
+   leftHand & rightHand (joint about x-axis between 0 and 90)
+   leftArm & rightArm (joint about x-axis between -15 and 15)
+   leftLeg & rightLeg (joint about x-axis between -30 and 30)
+   leftFoot (joint about y-axis between 0 and 70)
+   rightFoot (joint about y-axis between -70 and 0)
+4. Both resetJoints and resetAll will also clear all the selections(picking).
+5. Change to posion/orientation mode will also clear all the selections and when going back to joint mode, selections won't be recovered.
+6. The light is always a point light at the eye position.
+7. My undo/redo might not work perfectly.
+
+Data Structure changes:
+1. add the 'current' field to both m_joint_x and m_joint_y
+2. add ChangeJointAngleCommand class in the same name cpp/header file for doing the undo/redo.
+3. add picking shader, picking fragment shader to the Assets folder
+
+Hierarchical model overview, please see the attached diagram A3/modelHierarchy.jpg.
